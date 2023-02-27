@@ -1,0 +1,5 @@
+.bc-header img{
+    object-fit:cover;
+    width: 100%;
+    height: calc(100dvh - 26rem);
+}
