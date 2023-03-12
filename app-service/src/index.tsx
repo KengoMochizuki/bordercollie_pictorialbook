@@ -5,7 +5,11 @@ import './styles/common.css';
 import App from './App';
 import Header from './Header';
 import Home from './Home';
-import reportWebVitals from './reportWebVitals';
+import Upload from './Upload';
+import { useState } from 'react';
+// import reportWebVitals from './reportWebVitals';
+
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -18,12 +22,19 @@ root.render(
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
   />
 </head>
-    <Header/>
+<header>
+<Header/>
+</header>
+    <body>
+  <Upload/>
     <Home/>
+
+    </body>
+    
   </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();
